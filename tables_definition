@@ -1,0 +1,3 @@
+CREATE TABLE raw_documents (id STRING, content STRING, ingest_time TIMESTAMP) USING delta;
+CREATE TABLE parsed_documents (id STRING, parsed_content STRING, ingest_time TIMESTAMP) USING delta;
+CREATE TABLE search_context (id STRING, search_content STRING, ingest_time TIMESTAMP) USING delta;
